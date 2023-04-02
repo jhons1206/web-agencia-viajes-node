@@ -1,4 +1,32 @@
 extends ./layout/index
 
 block contenido
-    p Nosotros
+    main.container.mt-5 
+        .row 
+            .col-md-5 
+                img(src="img/nosotros.jpg", alt="Sobre Nosotros", class="img-fluid")
+            .col-md-7
+                h1 #{pagina}
+                blockquote Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec egestas leo. Pellentesque fermentum, ante a consequat accumsan, ligula risus fermentum ante, at malesuada est lorem id elit. Vivamus ipsum augue, rutrum non lectus vel, finibus lacinia est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc eget tellus condimentum, eleifend eros pulvinar, hendrerit nisl.
+
+                p Curabitur nunc erat, suscipit et purus nec, hendrerit ultrices arcu. Fusce quis lorem commodo, efficitur ante sed, ultricies tortor. Nunc tempor nibh a gravida iaculis. Nunc mattis quis leo non mollis. Donec volutpat quis velit at feugiat.
+
+                p In et leo lacinia, laoreet purus non, tincidunt libero. Ut non lacus sem. Phasellus id quam varius nulla ultrices dapibus. Vivamus vitae velit bibendum, sodales mauris vel, blandit purus. Vestibulum nibh quam, vulputate nec semper sit amet, porttitor sed turpis.
+    
+    .listado-iconos    
+        .container.mt-5.py-5.text-center 
+            .row 
+                .col-md-4 
+                    img(src="img/icono_seguridad.svg", alt="icono seguridad", class="img-fluid mb-4")
+                    h2.mb-4 Seguridad 
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+                
+                .col-md-4 
+                    img(src="img/icono_destinos.svg", alt="icono destinos", class="img-fluid mb-4")
+                    h2.mb-4 Mejores Destinos 
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
+
+                .col-md-4 
+                    img(src="img/icono_precios.svg", alt="icono precios", class="img-fluid mb-4")
+                    h2.mb-4 Los Mejores Precios 
+                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.
