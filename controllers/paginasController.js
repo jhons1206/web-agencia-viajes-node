@@ -6,6 +6,7 @@ const paginaInicio = (req, res) => {
     // res: lo que express nos responde
     res.render('Inicio', {
         pagina: 'Inicio',
+        clase: 'home'
     });
 };
 
