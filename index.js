@@ -19,7 +19,7 @@ const port = process.env.PORT || 4000;
 // Habilitar Pug (Template Engine)
 app.set('view engine', 'pug');
 
-// Obtener año actual
+// Obtener el año actual
 app.use((req, res, next) => {
     const year = new Date();
 
@@ -31,7 +31,7 @@ app.use((req, res, next) => {
 // Agregar body parser para leer los datos del formulario
 app.use(express.urlencoded({extended: true}));
 
-// Definir la carpeta publica
+// Definir la carpeta publica para archivos estáticos
 app.use(express.static('public'));
 
 // Agregar Router

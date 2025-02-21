@@ -35,7 +35,6 @@ const guardarTestimonial = async (req, res) => {
         })
     } else {
         // Almacenarlo en la base de datos
-
         try {
             await Testimonial.create({
                 nombre,
